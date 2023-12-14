@@ -55,8 +55,8 @@ data
 
 ### Preprocessing
 ```python
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import model
 
-x_train, x_test, y_train, y_test = train_test_split(data.text.values, data.language.values, test_size=0.1, random_state=42)
+x_train, x_test, y_train, y_test = model(data.text.values, data.language.values, test_size=0.1, random_state=42)
 x_train.shape, y_train.shape, x_test.shape, y_test.shape
 ```
