@@ -55,6 +55,23 @@ data.columns = ('text','language')
 data
 ```
 
+### Membersihkan Kalimat Teks Pada Data
+Proses membersihkan teks pada data melibatkan langkah-langkah detil yang bertujuan untuk menghasilkan kalimat yang bersih, termasuk penghapusan karakter tidak diinginkan, normalisasi kata, dan pembersihan umum untuk memastikan kualitas teks yang optimal sebelum dilibatkan dalam tahap analisis atau pemodelan lebih lanjut.
+```python
+import re
+
+def clean_txt(text):
+    text=text.lower()
+    text=re.sub(r'[^\w\s]',' ',text)
+    text=re.sub(r'[_0-9]',' ',text)
+    text=re.sub(r'\s\s+',' ',text)
+    return text
+
+# Penerapan Function clean_txt
+txt = 'Adik (&*(()))mencuci tangan $agar #terhindar dari$ kuman'
+print(clean_txt(txt))
+```
+
 ### Pemisahan Data Latih dan Uji
 Prosedur validasi model yang mengindikasikan seberapa baik kinerja model pada data yang baru
 ```python
