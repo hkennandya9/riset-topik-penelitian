@@ -72,11 +72,27 @@ txt = 'Adik (&*(()))mencuci tangan $agar #terhindar dari$ kuman'
 print(clean_txt(txt))
 ```
 
-### Pemisahan Data Latih dan Uji
+### Pemisahan Data Latih dan Uji (Train Test Split)
 Prosedur validasi model yang mengindikasikan seberapa baik kinerja model pada data yang baru
 ```python
 from sklearn.model_selection import train_test_split
 
 x_train, x_test, y_train, y_test = train_test_split(data.text.values, data.language.values, test_size=0.1, random_state=42)
 x_train.shape, y_train.shape, x_test.shape, y_test.shape
+```
+### Vektorisasi (Vectorization)
+Metode pendekatan untuk mengoptimalkan algoritma agar lebih efisien
+ ```python
+from tqdm import tqdm
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+x_train = [clean_txt(text) for text in tqdm(x_train)]
+x_test = [clean_txt(text) for text in tqdm(x_test)]
+
+# Tfidf Vectorizer
+tfidf = TfidfVectorizer()
+tfidf.fit(x_train)
+
+x_train_ready = tfidf.transform(x_train)
+x_test_ready = tfidf.transform(x_test)
 ```
