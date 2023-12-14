@@ -41,3 +41,22 @@ Distribusi menunjukkan bahwa dataset memiliki tingkat keseimbangan yang lengkap,
 ![figure 2](https://github.com/hkennandya9/riset-topik-penelitian/assets/127032854/f2517afe-c5c8-4170-89b1-1d2e79cef365)
 
 Distribusi menunjukkan sebagian besar kalimat teks pada dataset memiliki jumlah kata yang kurang dari 50 kata.
+
+## Preprocessing
+
+### Memuat Dataset
+```python
+import pandas as pd
+
+data = pd.read_csv(f'dataset.csv')
+data.columns = ('text','language')
+data
+```
+
+### Preprocessing
+```python
+from sklearn.model_selection import train_test_split
+
+x_train, x_test, y_train, y_test = train_test_split(data.text.values, data.language.values, test_size=0.1, random_state=42)
+x_train.shape, y_train.shape, x_test.shape, y_test.shape
+```
