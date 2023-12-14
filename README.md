@@ -48,9 +48,9 @@ Preprocessing merupakan serangkaian langkah yang diterapkan pada data sebelum di
 ### Memuat Dataset
 Mengimpor atau memuat dataset yang akan digunakan untuk analisis atau pelatihan model.
 ```python
-import pandas as pd
+import pandas
 
-data = pd.read_csv(f'dataset.csv')
+data = pandas.read_csv(f'dataset.csv')
 data.columns = ('text','language')
 data
 ```
@@ -112,3 +112,5 @@ labels = enc.classes_
 preds = enc.inverse_transform([0,3,6])
 preds
 ```
+## Implementasi Klasifikasi Naives Baiyes
+...
