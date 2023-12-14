@@ -32,3 +32,7 @@ Tiap nilai dalam kolom 'language' merepresentasikan bahasa yang bersesuaian deng
 Pada tabel tersebut terdapat 2 kolom berupa "Text" dan "language". 
 - <b>Text</b> adalah setiap baris yang berisi beberapa kalimat dalam bahasa tertentu yang dipilih
 - <b>language</b> adalah nama bahasa di mana teks ditulis pada kolom "Text"
+
+### Visualisasi Data
+- Distribusi Data Berdasarkan Kategori
+
