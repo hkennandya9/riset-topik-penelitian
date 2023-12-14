@@ -12,7 +12,6 @@ Salah satu cara untuk mengenali bahasa yang digunakan dalam teks adalah dengan m
 ## Research Questions
 - Bagaimana cara mengimplementasikan algoritma Naives Bayes untuk mendeteksi bahasa pada teks?
 - Seberapa akurat algoritma Naives Bayes dalam mendeteksi bahasa pada teks?
-- Bagaimana performa algoritma Naives Bayes dalam mendeteksi bahasa pada teks, dibandingkan dengan metode klasifikasi lainnya?
 
 ## Dataset
 [Dataset](https://www.kaggle.com/datasets/zarajamshaid/language-identification-datasst/data) yang digunakan terdiri dari 22 ribu sampel dengan berbagai nilai unik. Target yang digunakan diambil dari kolom "language" yang memuat 22 varian bahasa, yaitu English, Arabic, French, Hindi, Urdu, Portuguese, Persian, Pushto, Spanish, Korean, Tamil, Turkish, Estonian, Russian, Romanian, Chinese, Swedish, Latin, Indonesian, Dutch, Japanese dan Thai.
