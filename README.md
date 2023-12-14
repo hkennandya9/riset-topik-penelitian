@@ -29,6 +29,7 @@ Tiap nilai dalam kolom 'language' merepresentasikan bahasa yang bersesuaian deng
 | விசாகப்பட்டினம் தமிழ்ச்சங்கத்தை இந்துப் பத்திரிகை-விசாகப்பட்டின ஆசிரியர் சம்பத்துடன் இணைந்து விரிவுப... | Tamil |
 | de spons behoort tot het geslacht haliclona en behoort tot de familie chalinidae de wetenschappelijk... | Dutch |
 | エノが行きがかりでバスに乗ってしまい、気分が悪くなった際に助けるが、今すぐバスを降りたいと運転手に頼む際、本当のことを言ってしまうと彼女が恥ずかしい思いをすると察して「僕ウンコしたいんです」と言ってバ... | Japanese |
+| ... | ... |
 
 Pada tabel tersebut terdapat 2 kolom berupa "Text" dan "language". 
 - <b>Text</b> adalah setiap baris yang berisi beberapa kalimat dalam bahasa tertentu yang dipilih.
