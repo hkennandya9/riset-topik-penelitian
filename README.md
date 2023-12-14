@@ -1,27 +1,24 @@
-# Riset Informatika
+# Deteksi Bahasa Pada Teks Menggunakan Klasifikasi Naives Bayes
 
 Nama : Hafizh Kennandya Maulana <br>
 NPM : 20081010077 <br>
 Kelas : Riset Informatika D081
 
-## Deteksi Bahasa Pada Teks Menggunakan Klasifikasi Naives Bayes
-
-### Problem Statement
+## Problem Statement
 Teks adalah salah satu bentuk komunikasi yang paling umum digunakan di dunia digital. Teks dapat ditulis dalam berbagai bahasa, tergantung pada preferensi dan latar belakang penulis. Namun, tidak semua orang dapat mengenali bahasa yang digunakan dalam teks secara otomatis. Hal ini dapat menyulitkan proses pemrosesan teks lebih lanjut, seperti penerjemahan, klasifikasi, atau analisis sentimen.
 
 Salah satu cara untuk mengenali bahasa yang digunakan dalam teks adalah dengan menggunakan metode klasifikasi. Metode klasifikasi adalah teknik yang dapat mengelompokkan data berdasarkan karakteristik atau fitur tertentu. Salah satu metode klasifikasi yang populer dan sederhana adalah algoritma Naives Bayes. Algoritma Naives Bayes adalah algoritma yang berdasarkan pada teorema Bayes, yang menghitung probabilitas suatu kelas atau label berdasarkan frekuensi kemunculan fitur atau atribut dalam data.
 
-### Research Questions
+## Research Questions
 - Bagaimana cara mengimplementasikan algoritma Naives Bayes untuk mendeteksi bahasa pada teks?
 - Seberapa akurat algoritma Naives Bayes dalam mendeteksi bahasa pada teks?
 - Bagaimana performa algoritma Naives Bayes dalam mendeteksi bahasa pada teks, dibandingkan dengan metode klasifikasi lainnya?
 
-### Dataset : Language Identification dataset
+## Dataset
 [Dataset](https://www.kaggle.com/datasets/zarajamshaid/language-identification-datasst/data) yang digunakan terdiri dari 22 ribu sampel dengan berbagai nilai unik. Target yang digunakan diambil dari kolom "language" yang memuat 22 varian bahasa, yaitu English, Arabic, French, Hindi, Urdu, Portuguese, Persian, Pushto, Spanish, Korean, Tamil, Turkish, Estonian, Russian, Romanian, Chinese, Swedish, Latin, Indonesian, Dutch, Japanese dan Thai.
 
 Tiap nilai dalam kolom 'language' merepresentasikan bahasa yang bersesuaian dengan sampel tersebut. Gambaran lebih detail mengenai dataset, dapat dilihat pada tabel berikut
 
-#### dataset.csv
 | Text | language |
 | ------------- | ------------- |
 | klement gottwaldi surnukeha palsameeriti ning paigutati mausoleumi surnukeha oli aga liiga hilja ja ... | Estonian |
