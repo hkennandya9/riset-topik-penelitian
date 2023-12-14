@@ -153,12 +153,19 @@ def predict(text):
     ans = enc.inverse_transform(pred)
     return ans[0]
 
-print(predict('Saya mencuci tangan agar terhindar dari kuman'))
-print(predict('I wash my hands to avoid germs'))
-print(predict('أغسل يدي لتجنب الجراثيم'))
-print(predict('Ik was mijn handen om ziektekiemen te voorkomen'))
-print(predict('कीटाणुओं से बचने के लिए मैं अपने हाथ धोता हूं'))
-print(predict('Me lavo las manos para evitar gérmenes'))
+example_text = ['Saya mencuci tangan agar terhindar dari kuman', 
+                'I wash my hands to avoid germs', 
+                'أغسل يدي لتجنب الجراثيم',
+                'Ik was mijn handen om ziektekiemen te voorkomen',
+                'कीटाणुओं से बचने के लिए मैं अपने हाथ धोता हूं',
+                'Me lavo las manos para evitar gérmenes']
+result_language = []
+
+for text in example_text:
+  result_language.append(predict(text))
+
+for language in result_language:
+  print(language)
 ```
 #### Output
 ```
