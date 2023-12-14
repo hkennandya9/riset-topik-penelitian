@@ -73,7 +73,7 @@ print(clean_txt(txt))
 ```
 
 ### Pemisahan Data Latih dan Uji (Train Test Split)
-Prosedur validasi model yang mengindikasikan seberapa baik kinerja model pada data yang baru
+Prosedur validasi model yang mengindikasikan seberapa baik kinerja model pada data yang baru.
 ```python
 from sklearn.model_selection import train_test_split
 
@@ -81,7 +81,7 @@ x_train, x_test, y_train, y_test = train_test_split(data.text.values, data.langu
 x_train.shape, y_train.shape, x_test.shape, y_test.shape
 ```
 ### Vektorisasi (Vectorization)
-Metode pendekatan untuk mengoptimalkan algoritma agar lebih efisien
+Metode pendekatan untuk mengoptimalkan algoritma agar lebih efisien.
  ```python
 from tqdm import tqdm
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -95,4 +95,20 @@ tfidf.fit(x_train)
 
 x_train_ready = tfidf.transform(x_train)
 x_test_ready = tfidf.transform(x_test)
+```
+
+### Label Encoding
+Metode untuk melakukan konversi label menjadi bentuk numerik pada model machine learning.
+```python
+from sklearn.preprocessing import LabelEncoder
+
+enc = LabelEncoder()
+enc.fit(y_train)
+y_train_ready = enc.transform(y_train)
+y_test_ready = enc.transform(y_test)
+labels = enc.classes_
+
+# Pengujian Encoder
+preds = enc.inverse_transform([0,3,6])
+preds
 ```
