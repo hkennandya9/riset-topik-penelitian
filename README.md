@@ -33,11 +33,11 @@ Pada tabel tersebut terdapat 2 kolom berupa "Text" dan "language".
 - <b>language</b> adalah nama bahasa di mana teks ditulis pada kolom "Text"
 
 ### Distribusi Data Pada Setiap Bahasa
-![figure 1](https://github.com/hkennandya9/riset-topik-penelitian/assets/127032854/1a64a54b-d070-4ceb-a109-d9d7bfbc154c)
+![figure 1](https://github.com/hkennandya9/riset-topik-penelitian/assets/127032854/7f43e458-dd4e-4a9e-b613-92fab573645f)
 
 Distribusi menunjukkan bahwa dataset memiliki tingkat keseimbangan yang lengkap, karena jumlah instan data setiap kategori bahasa berada pada tingkat kesetaraan yang sama yaitu 1000.
 
 ### Distribusi Panjang Kalimat Pada Data
-![figure 2](https://github.com/hkennandya9/riset-topik-penelitian/assets/127032854/e305a4cf-27f2-4e14-8212-16d942d96502)
+![figure 2](https://github.com/hkennandya9/riset-topik-penelitian/assets/127032854/f2517afe-c5c8-4170-89b1-1d2e79cef365)
 
 Distribusi menunjukkan sebagian besar kalimat teks pada dataset memiliki jumlah kata yang kurang dari 50 kata.
