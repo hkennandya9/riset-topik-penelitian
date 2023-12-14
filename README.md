@@ -43,8 +43,10 @@ Distribusi menunjukkan bahwa dataset memiliki tingkat keseimbangan yang lengkap,
 Distribusi menunjukkan sebagian besar kalimat teks pada dataset memiliki jumlah kata yang kurang dari 50 kata.
 
 ## Preprocessing
+Preprocessing merupakan serangkaian langkah yang diterapkan pada data sebelum digunakan dalam analisis atau pelatihan model, bertujuan untuk membersihkan, mentransformasi, atau menyesuaikan data agar sesuai dengan algoritma yang akan dijalankan.
 
 ### Memuat Dataset
+Mengimpor atau memuat dataset yang akan digunakan untuk analisis atau pelatihan model.
 ```python
 import pandas as pd
 
@@ -53,10 +55,11 @@ data.columns = ('text','language')
 data
 ```
 
-### Preprocessing
+### Pemisahan Data Latih dan Uji
+Prosedur validasi model yang mengindikasikan seberapa baik kinerja model pada data yang baru
 ```python
-from sklearn.model_selection import model
+from sklearn.model_selection import train_test_split
 
-x_train, x_test, y_train, y_test = model(data.text.values, data.language.values, test_size=0.1, random_state=42)
+x_train, x_test, y_train, y_test = train_test_split(data.text.values, data.language.values, test_size=0.1, random_state=42)
 x_train.shape, y_train.shape, x_test.shape, y_test.shape
 ```
