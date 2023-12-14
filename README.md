@@ -51,7 +51,7 @@ Mengimpor atau memuat dataset yang akan digunakan untuk analisis atau pelatihan 
 import pandas
 
 data = pandas.read_csv(f'dataset.csv')
-data.columns = ('text','language')
+data.columns = ('text', 'language')
 data
 ```
 
@@ -68,7 +68,7 @@ def clean_txt(text):
     return text
 
 # Penerapan Function clean_txt
-txt = 'Adik (&*(()))mencuci tangan $agar #terhindar dari$ kuman'
+txt = 'Saya (&*(()))mencuci tangan $agar #terhindar dari$ kuman'
 print(clean_txt(txt))
 ```
 
@@ -80,6 +80,11 @@ from sklearn.model_selection import train_test_split
 x_train, x_test, y_train, y_test = train_test_split(data.text.values, data.language.values, test_size=0.1, random_state=42)
 x_train.shape, y_train.shape, x_test.shape, y_test.shape
 ```
+#### Output
+```
+((19800,), (19800,), (2200,), (2200,))
+```
+
 ### Vektorisasi (Vectorization)
 Metode pendekatan untuk mengoptimalkan algoritma agar lebih efisien.
  ```python
@@ -95,6 +100,11 @@ tfidf.fit(x_train)
 
 x_train_ready = tfidf.transform(x_train)
 x_test_ready = tfidf.transform(x_test)
+```
+#### Output
+```
+100%|██████████| 19800/19800 [00:01<00:00, 16246.68it/s]
+100%|██████████| 2200/2200 [00:00<00:00, 16688.22it/s]
 ```
 
 ### Label Encoding
@@ -112,5 +122,50 @@ labels = enc.classes_
 preds = enc.inverse_transform([0,3,6])
 preds
 ```
+#### Output
+```
+array(['Arabic', 'English', 'Hindi'], dtype=object)
+```
+
 ## Implementasi Klasifikasi Naives Baiyes
-...
+Setelah melalui proses preprocessing, data yang telah diolah disajikan ke dalam model machine learning untuk dilatih. Data yang telah terlatih dapat digunakan untuk melakukan prediksi bahasa dari suatu teks kalimat.
+```python
+from sklearn.naive_bayes import MultinomialNB
+
+nb = MultinomialNB()
+nb.fit(x_train_ready, y_train_ready)
+```
+### Membuat Model Pipeline
+Membuat model pipeline untuk menggabungkan vektorizer dan model terlatih menjadi satu objek
+
+```python
+from sklearn.pipeline import Pipeline
+
+model = Pipeline([('vectorizer', tfidf),('nb', nb)])
+```
+### Uji Model Prediksi Bahasa Melalui Kalimat Teks 
+Melakukan prediksi berdasarkan model dalam menentukan bahasa pada input berupa suatu kalimat teks 
+
+```python
+# Function untuk melakukan prediksi bahasa dari kalimat teks
+def predict(text):
+    pred = model.predict([clean_txt(text)])
+    ans = enc.inverse_transform(pred)
+    return ans[0]
+
+print(predict('Saya mencuci tangan agar terhindar dari kuman'))
+print(predict('I wash my hands to avoid germs'))
+print(predict('أغسل يدي لتجنب الجراثيم'))
+print(predict('Ik was mijn handen om ziektekiemen te voorkomen'))
+print(predict('कीटाणुओं से बचने के लिए मैं अपने हाथ धोता हूं'))
+print(predict('Me lavo las manos para evitar gérmenes'))
+```
+#### Output
+```
+Indonesian
+English
+Arabic
+Dutch
+Hindi
+Spanish
+```
