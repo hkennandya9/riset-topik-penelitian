@@ -33,6 +33,32 @@ Pada tabel tersebut terdapat 2 kolom berupa "Text" dan "language".
 - <b>Text</b> adalah setiap baris yang berisi beberapa kalimat dalam bahasa tertentu yang dipilih
 - <b>language</b> adalah nama bahasa di mana teks ditulis pada kolom "Text"
 
-### Visualisasi Data
-- Distribusi Data Berdasarkan Kategori
+### Distribusi Data Berdasarkan Kategori
+![figure 1](https://github.com/hkennandya9/riset-topik-penelitian/assets/127032854/1a64a54b-d070-4ceb-a109-d9d7bfbc154c)
 
+| language     | Number of data    |
+|--------------|-----------|
+| Estonian     | 1000      |
+| Swedish      | 1000      |
+| English      | 1000      |
+| Russian      | 1000      |
+| Romanian     | 1000      |
+| Persian      | 1000      |
+| Pushto       | 1000      |
+| Spanish      | 1000      |
+| Hindi        | 1000      |
+| Korean       | 1000      |
+| Chinese      | 1000      |
+| French       | 1000      |
+| Portugese    | 1000      |
+| Indonesian   | 1000      |
+| Urdu         | 1000      |
+| Latin        | 1000      |
+| Turkish      | 1000      |
+| Japanese     | 1000      |
+| Dutch        | 1000      |
+| Tamil        | 1000      |
+| Thai         | 1000      |
+| Arabic       | 1000      |
+
+Dataset ini seimbang secara penuh karena memiliki jumlah data yang setara untuk setiap kategori.
