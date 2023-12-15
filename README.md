@@ -176,3 +176,26 @@ Dutch
 Hindi
 Spanish
 ```
+
+## Analisis Pengujian
+Pada tahapan ini dilakukan analisis untuk menilai sejauh mana model deteksi bahasa dapat secara akurat mengenali dan mengelompokkan bahasa dalam kalimat teks. Sejumlah metode digunakan dalam uji coba, yaitu 
+- Mean Squared Error (MSE)
+- Matriks Pengujian (Confusion Matrix)
+- Metrik Kinerja (akurasi, presisi, recall, dan F1-score)
+
+Hasil analisis pengujian dapat membantu menemukan bagian-bagian yang perlu diperbaiki atau dioptimalkan pada model. Hal ini membantu menilai seberapa baik model dalam mendeteksi bahasa yang mnngkin melibatkan penyesuaian parameter model, penambahan lebih banyak data latih, atau menggunakan teknik pemrosesan teks tambahan.
+
+### MSE (Mean Square Error)
+Analisis Mean Square Error bertujuan untuk mengukur sejauh mana perbedaan antara hasil prediksi model Naive Bayes dan nilai sebenarnya dalam melakukan deteksi bahasa. Semakin rendah nilai MSE, semakin kecil deviasi antara hasil prediksi dan nilai sebenarnya, menunjukkan kinerja model yang lebih baik.
+#### Rumus MSE
+![image](https://github.com/hkennandya9/riset-topik-penelitian/assets/127032854/865e2602-d390-4232-8d98-b1e122fc938e)
+#### Hasil Perhitungan MSE
+```
+0.11363636363636363
+```
+- Hasil perhitungan menunjukkan tingkat kesalahan rata-rata kuadrat antara prediksi model Naive Bayes dengan nilai sebenarnya dalam deteksi bahasa yaitu 0.11363636363636363.
+- Deviasi antara prediksi model dan nilai memiliki hasil yang cukup rendah, hal ini menandakan bahwa model secara umum sudah dapat memahami variasi dalam bahasa yang ada dalam dataset.
+
+### Matriks Pengujian (Confusion Matrix)
+
+### Metrik Kinerja
