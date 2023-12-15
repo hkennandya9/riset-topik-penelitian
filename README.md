@@ -212,7 +212,7 @@ Dalam analisis pengujian yang lebih mendalam, diperlukan persiapan data prediksi
 Hasil analisis pengujian dapat membantu menemukan bagian-bagian yang perlu diperbaiki atau dioptimalkan pada model. Hal ini membantu menilai seberapa baik model dalam mendeteksi bahasa yang mnngkin melibatkan penyesuaian parameter model, penambahan lebih banyak data latih, atau menggunakan teknik pemrosesan teks tambahan.
 
 ### MSE (Mean Square Error)
-Analisis Mean Square Error bertujuan untuk mengukur sejauh mana perbedaan antara hasil prediksi model Naive Bayes dan nilai sebenarnya dalam melakukan deteksi bahasa. Semakin rendah nilai MSE, semakin kecil deviasi antara hasil prediksi dan nilai sebenarnya, menunjukkan kinerja model yang lebih baik.
+Mean Square Error bertujuan untuk mengukur sejauh mana perbedaan antara hasil prediksi model Naive Bayes dan nilai sebenarnya dalam melakukan deteksi bahasa. Semakin rendah nilai MSE, semakin kecil deviasi antara hasil prediksi dan nilai sebenarnya, menunjukkan kinerja model yang lebih baik.
 #### Rumus MSE
 ![image](https://github.com/hkennandya9/riset-topik-penelitian/assets/127032854/865e2602-d390-4232-8d98-b1e122fc938e)
 #### Hasil Perhitungan MSE
