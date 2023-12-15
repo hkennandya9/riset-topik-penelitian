@@ -183,9 +183,9 @@ Pada tahapan ini dilakukan analisis untuk menilai sejauh mana model deteksi baha
 - Matriks Pengujian (Confusion Matrix)
 - Metrik Kinerja (akurasi, presisi, recall, dan F1-score)
 
-Dalam analisis pengujian yang lebih mendalam, diperlukan persiapan data uji  yang akan menjadi subjek prediksi oleh model. Proses ini melibatkan serangkaian langkah termasuk pengumpulan, penyaringan, dan pengaturan data agar sesuai dengan kebutuhan pengujian.
+Dalam analisis pengujian yang lebih mendalam, diperlukan persiapan data prediksi yang akan menjadi subjek prediksi oleh model. Proses ini melibatkan serangkaian langkah termasuk pengumpulan, penyaringan, dan pengaturan data agar sesuai dengan kebutuhan pengujian.
 
-#### Data Uji
+#### Hasil Data Prediksi
 | Language     | Jumlah |
 |--------------|--------|
 | Swedish      |   7    |
@@ -232,13 +232,6 @@ Matriks Pengujian memberikan pemahaman yang lebih mendalam tentang hasil prediks
 - Model tidak membuat kesalahan positif palsu (False Positive = 0)
 - Terdapat beberapa kesalahan dalam mengenali kasus positif (False Negative = 5)
 - Model memiliki kinerja baik dalam mengenali kasus positif (True Positive tinggi)
-
-| Label               | Hasil |
-|---------------------|-------|
-| True Negative (TN)  | 0     |
-| False Positive (FP) | 0     |
-| False Negative (FN) | 5     |
-| True Positive (TP)  | 39    |
 
 Meskipun hasil yang ditunjukkan baik dalam mengenali kasus positif, perhatian tetap diperlukan untuk memahami dampak False Negative dan memastikan bahwa model dapat diandalkan dalam situasi di mana mendeteksi kasus positif sangat penting.
 
