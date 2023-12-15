@@ -5,7 +5,7 @@ NPM : 20081010077 <br>
 Kelas : Riset Informatika D081
 
 ## Problem Statement
-Teks adalah salah satu bentuk komunikasi yang paling umum digunakan di dunia digital. Teks dapat ditulis dalam berbagai bahasa, tergantung pada preferensi dan latar belakang penulis. Namun, tidak semua orang dapat mengenali bahasa yang digunakan dalam teks secara otomatis. Hal ini dapat menyulitkan proses pemrosesan teks lebih lanjut, seperti penerjemahan, klasifikasi, atau analisis sentimen.
+Teks adalah salah satu bentuk komunikasi yang paling umum digunakan di dunia. Teks dapat ditulis dalam berbagai bahasa, tergantung pada preferensi dan latar belakang seseorang. Namun, tidak semua orang dapat mengenali bahasa yang digunakan dalam teks secara otomatis. Hal ini dapat menyulitkan proses pemrosesan teks lebih lanjut, seperti penerjemahan.
 
 Salah satu cara untuk mengenali bahasa yang digunakan dalam teks adalah dengan menggunakan metode klasifikasi. Metode klasifikasi adalah teknik yang dapat mengelompokkan data berdasarkan karakteristik atau fitur tertentu. Salah satu metode klasifikasi yang populer dan sederhana adalah algoritma Naives Bayes. Algoritma Naives Bayes adalah algoritma yang berdasarkan pada teorema Bayes, yang menghitung probabilitas suatu kelas atau label berdasarkan frekuensi kemunculan fitur atau atribut dalam data.
 
