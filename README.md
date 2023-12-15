@@ -183,6 +183,32 @@ Pada tahapan ini dilakukan analisis untuk menilai sejauh mana model deteksi baha
 - Matriks Pengujian (Confusion Matrix)
 - Metrik Kinerja (akurasi, presisi, recall, dan F1-score)
 
+Dalam analisis pengujian yang lebih mendalam, diperlukan persiapan data uji  yang akan menjadi subjek prediksi oleh model. Proses ini melibatkan serangkaian langkah termasuk pengumpulan, penyaringan, dan pengaturan data agar sesuai dengan kebutuhan pengujian.
+
+#### Data Uji
+| Language     | Jumlah |
+|--------------|--------|
+| Swedish      |   7    |
+| Indonesian   |   2    |
+| English      |   2    |
+| Latin        |   2    |
+| Romanian     |   2    |
+| Estonian     |   2    |
+| Tamil        |   2    |
+| Korean       |   2    |
+| Pushto       |   2    |
+| Persian      |   2    |
+| Urdu         |   2    |
+| Hindi        |   2    |
+| Russian      |   2    |
+| Spanish      |   2    |
+| Portugese    |   2    |
+| French       |   2    |
+| Arabic       |   2    |
+| Dutch        |   2    |
+| Thai         |   2    |
+| Turkish      |   1    |
+
 Hasil analisis pengujian dapat membantu menemukan bagian-bagian yang perlu diperbaiki atau dioptimalkan pada model. Hal ini membantu menilai seberapa baik model dalam mendeteksi bahasa yang mnngkin melibatkan penyesuaian parameter model, penambahan lebih banyak data latih, atau menggunakan teknik pemrosesan teks tambahan.
 
 ### MSE (Mean Square Error)
@@ -197,5 +223,23 @@ Analisis Mean Square Error bertujuan untuk mengukur sejauh mana perbedaan antara
 - Deviasi antara prediksi model dan nilai memiliki hasil yang cukup rendah, hal ini menandakan bahwa model secara umum sudah dapat memahami variasi dalam bahasa yang ada dalam dataset.
 
 ### Matriks Pengujian (Confusion Matrix)
+Matriks Pengujian memberikan pemahaman yang lebih mendalam tentang hasil prediksi model serta membantu mengidentifikasi area di mana model cenderung membuat kesalahan.
+
+#### Hasil Matriks Pengujian
+![image](https://github.com/hkennandya9/riset-topik-penelitian/assets/127032854/545d426e-cbdf-4694-81f1-020a42390301)
+
+- Model memiliki kinerja sempurna dalam mengenali kasus negatif (True Negative tinggi)
+- Model tidak membuat kesalahan positif palsu (False Positive = 0)
+- Terdapat beberapa kesalahan dalam mengenali kasus positif (False Negative = 5)
+- Model memiliki kinerja baik dalam mengenali kasus positif (True Positive tinggi)
+
+| Label               | Hasil |
+|---------------------|-------|
+| True Negative (TN)  | 0     |
+| False Positive (FP) | 0     |
+| False Negative (FN) | 5     |
+| True Positive (TP)  | 39    |
+
+Meskipun hasil yang ditunjukkan baik dalam mengenali kasus positif, perhatian tetap diperlukan untuk memahami dampak False Negative dan memastikan bahwa model dapat diandalkan dalam situasi di mana mendeteksi kasus positif sangat penting.
 
 ### Metrik Kinerja
