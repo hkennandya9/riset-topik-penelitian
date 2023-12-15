@@ -236,3 +236,26 @@ Matriks Pengujian memberikan pemahaman yang lebih mendalam tentang hasil prediks
 Meskipun hasil yang ditunjukkan baik dalam mengenali kasus positif, perhatian tetap diperlukan untuk memahami dampak False Negative dan memastikan bahwa model dapat diandalkan dalam situasi di mana mendeteksi kasus positif sangat penting.
 
 ### Metrik Kinerja
+Metrik Kinerja merupakan alat evaluasi yang mendalam untuk mengukur sejauh mana model deteksi bahasa berhasil dalam tugasnya.
+- Akurasi mengukur sejauh mana model dapat mengklasifikasikan dengan benar
+- Presisi menunjukkan kemampuan model dalam menghindari memberikan label positif pada kelas yang sebenarnya negatif
+- Recall mengukur kemampuan model untuk mendeteksi semua kasus positif yang sebenarnya
+- F1 Score memberikan nilai gabungan antara presisi dan recall
+
+#### Hasil Perhitungan Metrik Kinerja
+```
+Akurasi: 0.8863636363636364
+Presisi: 1.0
+Recall: 0.8863636363636364
+F1 Score: 0.9397590361445783
+```
+
+- Akurasi pada model menujukkan hasil yang baik dan mampu mengklasifikasikan sebagian besar kasus dengan benar
+- Presisi model sangat tinggi, menunjukkan ketidakmampuan model dalam membuat kesalahan positif palsu
+- Recall yang baik menandakan bahwa model dapat mengidentifikasi sebagian besar kasus positif yang sebenarnya
+- F1 Score yang tinggi menunjukkan keseimbangan yang baik antara presisi dan recall, menandakan kinerja model yang baik secara keseluruhan
+
+## Kesimpulan
+Algoritma Naives Bayes menunjukkan akurasi yang tinggi dalam mendeteksi bahasa pada teks, seperti dibuktikan oleh nilai rendah Mean Square Error, hasil positif dari Matriks Pengujian, dan metrik kinerja yang baik. Model ini berhasil mengenali bahasa dengan tepat dan memiliki potensi sebagai aplikasi deteksi bahasa pada kalimat teks. Namun, meskipun menunjukkan kinerja yang baik masih diperlukan ruang untuk melakukan perbaikan. Beberapa situasi mungkin memerlukan penyesuaian lebih lanjut untuk meningkatkan ketepatan dan kehandalan algoritma dalam mendeteksi bahasa pada teks. Evaluasi lebih lanjut diperlukan untuk mengidentifikasi potensi kelemahan dan menyempurnakan model agar dapat bersaing lebih baik dalam tugas deteksi bahasa.
+
+## Referensi
