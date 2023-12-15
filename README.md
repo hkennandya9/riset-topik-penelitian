@@ -1,4 +1,4 @@
-# Analisa Deteksi Bahasa Pada Kalimat Teks Menggunakan Klasifikasi Naives Bayes
+# Analisa Deteksi Bahasa Pada  Teks Menggunakan Klasifikasi Naives Bayes
 
 Nama : Hafizh Kennandya Maulana <br>
 NPM : 20081010077 <br>
