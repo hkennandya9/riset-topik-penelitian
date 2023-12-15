@@ -186,7 +186,7 @@ Pada tahapan ini dilakukan analisis untuk menilai sejauh mana model deteksi baha
 Dalam analisis pengujian yang lebih mendalam, diperlukan persiapan data prediksi yang akan menjadi subjek prediksi oleh model. Proses ini melibatkan serangkaian langkah termasuk pengumpulan, penyaringan, dan pengaturan data agar sesuai dengan kebutuhan pengujian.
 
 #### Hasil Data Prediksi
-| Language     | Jumlah |
+| Bahasa       | Jumlah |
 |--------------|--------|
 | Swedish      |   7    |
 | Indonesian   |   2    |
